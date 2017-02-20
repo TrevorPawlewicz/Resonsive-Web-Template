@@ -6,7 +6,6 @@ https://www.gliffy.com/go/publish/11813115
 
 
 Concept:
-
 Company web template that is designed with "mobile-first" in mind.
 
 

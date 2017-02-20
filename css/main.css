@@ -1,9 +1,13 @@
 body {
     font-family: sans-serif;
 }
-footer {
-    background-color: coral;
-    clear: both;
+#header {
+    background-color: #DDD;
+    border-color: #000000;
+    float: left;
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding-top: 10px;
 }
 #logo {
     padding: 10px;
@@ -15,6 +19,7 @@ footer {
 }
 nav {
     padding: 10px 0 0;
+    margin-bottom: 10px;
 }
 nav ul {
     padding: 0;
@@ -25,15 +30,31 @@ nav li {
     display: inline-block;;
 }
 nav a {
-    padding: 15px 10px;
-    background-color: azure;
+    padding: 5px 10px;
+    color: black;
+    background-color: #DDD;
     text-decoration: none;
 }
+
+nav a.selected,
 nav a:hover {
     color: white;
     background-color: darkgrey;
+    text-decoration: none;
 }
 
+#wrapper {
+    max-width: 1180px;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    min-height: 70px;
+    padding: 45px;
+    text-align: center;
+    clear: both;
+}
 /* ---------for testing---------- */
 .border {border: 1px solid black;}
 /* ---------for testing---------- */
@@ -43,18 +64,23 @@ nav a:hover {
 /* effects when screen in at 480 or MORE */
 @media screen and (min-width:480px){
     #primary {
-        background-color: pink;
+        background-color: #FFF;
         width: 60%;
         float: left;
     }
     #secondary {
-        background-color: green;
+        background-color: grey;
         width: 35%;
         float: right;
     }
     #header nav {
         text-align: center;
         margin-bottom: 15px;
+        background-color: #000;
+        line-height: 60px;
+    }
+    nav a {
+        padding: 15px 10px;
     }
 }
 
@@ -69,5 +95,9 @@ nav a:hover {
         background-color: blue;
         width: 45%;
         float: left;
+    }
+    #wrapper {
+        margin: 0 auto;
+        padding: 0 4%;
     }
 }
