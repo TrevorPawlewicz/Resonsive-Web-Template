@@ -1,3 +1,73 @@
 body {
     font-family: sans-serif;
 }
+footer {
+    background-color: coral;
+    clear: both;
+}
+#logo {
+    padding: 10px;
+}
+#header h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 45px;
+}
+nav {
+    padding: 10px 0 0;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+nav li {
+    display: inline-block;;
+}
+nav a {
+    padding: 15px 10px;
+    background-color: azure;
+    text-decoration: none;
+}
+nav a:hover {
+    color: white;
+    background-color: darkgrey;
+}
+
+/* ---------for testing---------- */
+.border {border: 1px solid black;}
+/* ---------for testing---------- */
+
+
+
+/* effects when screen in at 480 or MORE */
+@media screen and (min-width:480px){
+    #primary {
+        background-color: pink;
+        width: 60%;
+        float: left;
+    }
+    #secondary {
+        background-color: green;
+        width: 35%;
+        float: right;
+    }
+    #header nav {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/* effects when screen in at 720 or MORE */
+@media screen and (min-width:720px){
+    #header nav {
+        width: 45%;
+        float: right;
+        text-align: right;
+    }
+    #logo {
+        background-color: blue;
+        width: 45%;
+        float: left;
+    }
+}
