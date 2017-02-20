@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 #header {
     background-color: #DDD;
@@ -16,6 +16,9 @@ body {
     padding: 0;
     margin: 0;
     line-height: 45px;
+}
+img {
+    max-width: 100%;
 }
 nav {
     padding: 10px 0 0;
@@ -45,8 +48,13 @@ nav a:hover {
 
 #wrapper {
     max-width: 1180px;
+    padding:1em;
 }
-
+h2 {
+    font-family: 'Varela+Round';
+    font-size: 1.5em;
+    line-height: 0.9em;
+}
 footer {
     background-color: #000;
     color: #FFF;
@@ -59,7 +67,24 @@ footer {
 .border {border: 1px solid black;}
 /* ---------for testing---------- */
 
+.contact-page input {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: darkgrey;
+    color: #FFF;
+}
 
+#product-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#product-items li {
+    width: 100%;
+}
 
 /* effects when screen in at 480 or MORE */
 @media screen and (min-width:480px){
@@ -72,6 +97,7 @@ footer {
         background-color: grey;
         width: 35%;
         float: right;
+        padding: 5px;
     }
     #header nav {
         text-align: center;
@@ -81,6 +107,11 @@ footer {
     }
     nav a {
         padding: 15px 10px;
+    }
+    #product-items li {
+        float: left;
+        width: 40%;
+        margin: 5%;
     }
 }
 
